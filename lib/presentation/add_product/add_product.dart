@@ -187,10 +187,13 @@ class _AddProductPageState extends State<AddProductPage> {
                         width: 1.5,
                       ),
                     ),
-                    child: Image.file(
-                      _selectedImage!,
-                      fit: BoxFit.cover,
-                      height: 160,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(14.0),
+                      child: Image.file(
+                        _selectedImage!,
+                        fit: BoxFit.cover,
+                        height: 160,
+                      ),
                     ),
                   )
                 : InkWell(
